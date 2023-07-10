@@ -1,0 +1,102 @@
+.svg-arrow-dims { width: 24px; height: 24px; }
+.svg-check-dims { width: 32px; height: 32px; }
+.svg-dots-dims { width: 61px; height: 43px; }
+.svg-facebook-dims { width: 40px; height: 40px; }
+.svg-file-dims { width: 40px; height: 40px; }
+.svg-house-dims { width: 24px; height: 24px; }
+.svg-instagramm-dims { width: 40px; height: 40px; }
+.svg-item1-dims { width: 135px; height: 77px; }
+.svg-item2-dims { width: 185px; height: 104px; }
+.svg-item3-dims { width: 185px; height: 105px; }
+.svg-itemHouse-dims { width: 40px; height: 40px; }
+.svg-locate-dims { width: 24px; height: 24px; }
+.svg-next-dims { width: 32px; height: 32px; }
+.svg-previous-dims { width: 32px; height: 32px; }
+.svg-tag-dims { width: 40px; height: 40px; }
+.svg-twitter-dims { width: 40px; height: 40px; }
+.svg-uil_search-alt-dims { width: 40px; height: 40px; }
+
+@font-face {
+   font-family: Metropolis;
+   src: url('../fonts/Metropolis-Regular.woff');
+   src: url('../fonts/Metropolis-Regular.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: Metropolis;
+   src: url('../fonts/Metropolis-ExtraBold.woff');
+   src: url('../fonts/Metropolis-ExtraBold.woff2') format('woff2');
+   font-weight: 800;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: Metropolis;
+   src: url('../fonts/Metropolis-SemiBold.woff');
+   src: url('../fonts/Metropolis-SemiBold.woff2') format('woff2');
+   font-weight: 600;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: Metropolis;
+   src: url('../fonts/Metropolis-Medium.woff');
+   src: url('../fonts/Metropolis-Medium.woff2') format('woff2');
+   font-weight: 500;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: Metropolis;
+   src: url('../fonts/Metropolis-Bold.woff');
+   src: url('../fonts/Metropolis-Bold.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+ }
+
+.image {
+   width: 100%;
+}
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+main{
+   flex: 1 1 100%;
+}
+
+._container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
+.page {
+   &__head {
+      display: flex;
+      align-items: center;
+   }
+   &__num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 51px;
+      height: 51px;
+      color: var(--gray-1, #333);
+      text-align: center;
+      font-family: Metropolis;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border: 2px solid #333;
+      border-radius: 50%;
+      margin-right: 40px;
+   }
+   &__title {
+      color: var(--gray-1, #333);
+      font-family: Metropolis;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+   }
+}

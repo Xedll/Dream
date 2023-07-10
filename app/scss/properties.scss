@@ -1,0 +1,143 @@
+.prop {
+   margin-top: 120px;
+   position: relative;
+   &__container {
+   }
+
+   &__head {
+      margin-bottom: 70px;
+   }
+
+   &__about {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__title {
+      display: inline-block;
+      color: var(--gray-1, #333);
+font-family: Metropolis;
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px;
+letter-spacing: 0.48px;
+max-width: 40%;
+   }
+
+   &__more {
+      display: flex;
+      width: fit-content;
+      color: var(--main, #003458);
+      align-items: center;
+      font-family: Metropolis;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding: 34px 50px;
+
+      border: 2px solid var(--main, #003458);
+      background: var(--white, #FFF);
+
+      &::after {
+         content:'>';
+         margin-left: 24px;
+         width:32px;
+         height: 32px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+
+   &__swiper {
+      position: relative;
+      width: 100%;
+      height: 623px;
+      overflow: hidden;
+   }
+
+   &__line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      height: 100%;
+      gap:34px;
+      pointer-events:none;
+   }
+
+   &__item {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__itemImg {
+      position: relative;
+      margin-bottom: 32px;
+   }
+
+   &__img {
+      width: 360px;
+      height: 460px;
+      background: var(--bg) center/cover no-repeat;
+   }
+
+   &__name {
+      user-select: none;
+      background: #fff;
+      position: absolute;
+      bottom:-1px;
+      left:0;
+      color: var(--main, #003458);
+      text-align: center;
+      font-family: Metropolis;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 27px 34px;
+   }
+
+   &__itemContent {
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+      &>*:not(:last-child){
+         margin-bottom: 24px;
+      }
+   }
+
+   &__itemName {
+      color: var(--gray-1, #333);
+      font-family: Metropolis;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.32px;
+   }
+
+   &__itemAdress {
+      color: var(--gray-3, #828282);
+      font-family: Metropolis;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+   }
+
+   &__itemPrice {
+      color: var(--secondary, #82CDE5);
+      font-family: Metropolis;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.32px;
+   }
+}

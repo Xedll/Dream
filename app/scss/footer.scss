@@ -1,0 +1,139 @@
+.footer {
+   position: relative;
+   background: var(--main, #003458);
+   padding-top: 70px;
+   padding-bottom: 82px;
+   z-index: -2;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__links {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      color: var(--white, #FFF);
+font-family: Metropolis;
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px;
+letter-spacing: 0.48px;
+margin-bottom: 80px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column; 
+      &>*:not(:last-child) {
+         margin-bottom: 46px;
+      }
+   }
+
+   &__item {
+   }
+
+   &__name {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.60);
+font-family: Metropolis;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+   }
+
+   &__link {
+      color: var(--white, #FFF);
+
+/* PARAGRAF1 - 24 pt */
+font-family: Metropolis;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+   }
+   &__footerLinks {
+      display: flex;
+      &>*:not(:last-child) {
+         margin-right: 32px;
+      }
+      &>*{
+         transform: scale(1.5);
+      }
+   }
+   &__form {
+      padding: 50px 40px;
+      background: var(--white, #FFF);
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__formBg {
+      position: absolute;
+      top: 0;
+      right: 22.5%;
+      z-index: -2;
+      width: 386px;
+      height: 100%;
+      background: var(--secondary, #82CDE5);
+   }
+   &__question {
+      color: var(--gray-1, #333);
+
+/* H3 - 32 pt */
+font-family: Metropolis;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 0.32px;
+margin-bottom: 55px;
+   }
+
+   &__inputs {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      &>*:not(:last-child) {
+         margin-bottom: 32px;
+         color: var(--gray-3, #828282);
+
+/* PARAGRAF 2 - 18 pt */
+font-family: Metropolis;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 26px 32px;
+background: var(--gray-6, #F2F2F2);
+      }
+   }
+   &__fullname {
+
+   }
+   &__email {
+   }
+
+   &__message {
+      resize: none;
+      flex: 1 1 100%;
+   }
+
+   &__send {
+      color: var(--white, #FFF);
+text-align: center;
+font-family: Metropolis;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+padding: 23px 0;
+text-align: center;
+background: var(--main, #003458);
+   }
+}

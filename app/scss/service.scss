@@ -1,0 +1,149 @@
+.service {
+   margin-top: 120px;
+   margin-bottom: -135px;
+   &__container {
+   }
+
+   &__head {
+   }
+
+   &__page {
+      margin-bottom: 40px;
+   }
+
+   &__num {
+   }
+
+   &__about {
+
+   }
+
+   &__heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+   }
+
+   &__title {
+      color: var(--gray-1, #333);
+      font-family: Metropolis;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.48px;
+   }
+
+   &__text {
+      color: var(--gray-1, #333);
+      font-family: Metropolis;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      max-width: 35%;
+      margin-right: 10%;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 30px;
+   }
+
+   &__item {
+      padding: 160px 45px 45px 45px;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      &.black{
+         background: var(--main, #003458);
+      }
+   }
+
+   &__itemHeading {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top:-27px;
+      left: -18px;
+      &.black{
+         top: 0;
+         left: 0;
+      }
+   }
+
+   &__itemNum {
+   }
+
+   &__itemIcon {
+      width: 60px;
+      height: 60px;
+      margin-left: auto;
+      margin-right: 13%;
+      margin-top: -10px;
+      display: flex;
+      align-items: center;
+   }
+
+   &__itemContent {
+      display: flex;
+      align-items:flex-start;
+      height: 100%;
+   }
+
+   &__itemIndex {
+      margin-right: 16px;
+      font-family: Metropolis;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &.black {
+         color: var(--white, #FFF);
+      }
+   }
+
+   &__itemText {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+   }
+
+   &__itemTitle {
+      margin-bottom: 24px;
+      font-family: Metropolis;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &.black {
+         color: var(--white, #FFF);
+      }
+   }
+
+   &__itemAbout {
+      margin-bottom: 47px;
+      font-family: Metropolis;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      flex:1 1 100%;
+      &.black {
+         color: var(--white, #FFF);
+      }
+   }
+
+   &__button {
+      color: var(--gray-1, #333);
+         font-family: Metropolis;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+         text-decoration-line: underline;
+      &.black {
+         color: var(--white, #FFF);
+      }
+   }
+}

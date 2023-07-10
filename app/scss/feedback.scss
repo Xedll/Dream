@@ -1,0 +1,130 @@
+.feedback {
+   margin-top: 120px;
+   &__container {
+   }
+
+   &__head {
+      margin-bottom: 40px;
+   }
+
+   &__title {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & h2 {
+         color: var(--gray-1, #333);
+         font-family: Metropolis;
+         font-size: 48px;
+         font-style: normal;
+         font-weight: 800;
+         line-height: 56px;
+         letter-spacing: 0.48px;
+         max-width: 40%;
+      }
+   }
+
+   &__more {
+   }
+
+   &__slider {
+      position: relative;
+      height: 620px;
+      width: 100%;
+      overflow: hidden;
+   }
+
+   &__line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      display: grid;
+      transition: all 1s;
+      grid-template-columns: repeat(6,1fr);
+   }
+
+   &__item {
+      display: flex;
+   }
+
+   &__itemImg {
+      width: 460px;
+      height: 100%;
+      background: var(--bg) center/cover no-repeat;
+   }
+
+   &__itemContent {
+      display: flex;
+      width: 555px;
+      flex-direction: column;
+      margin-left: 80px;
+      margin-right: 47px;
+
+   }
+
+   &__itemIcon {
+      margin-top: 30px;
+      margin-bottom: 50px;
+   }
+
+   &__itemText {
+      color: var(--gray-1, #333);
+font-family: Metropolis;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px;
+margin-bottom: 70px;
+   }
+
+   &__itemAuthor {
+      display: flex;
+      align-items: center;
+   }
+
+   &__itemPhoto {
+      width: 80px;
+      height: 80px;
+      margin-right: 32px;
+   }
+
+   &__name {
+      color: var(--gray-1, #333);
+      font-family: Metropolis;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+   }
+
+   &__buttons {
+      position: absolute;
+      bottom: 0;
+      left: 380px;
+      &>*{
+         width: 80px;
+         height: 80px;
+         &>*{
+            &>*{
+               transform: scale(1.5);
+            }
+         }
+      }
+      &>*:last-child {
+         background: var(--secondary, #82CDE5);
+      }
+      &>*:first-child {
+         background: rgba(255, 255, 255, 0.60);
+backdrop-filter: blur(25px);
+      }
+   }
+
+   &__next {
+      margin-left:-3px;
+   }
+
+   &__prev {
+
+   }
+}

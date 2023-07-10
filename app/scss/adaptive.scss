@@ -1,0 +1,7 @@
+.disabled {
+   display: none;
+}
+.rotated {
+   transform:rotate(180deg);
+   transition:transform .2s;
+}
