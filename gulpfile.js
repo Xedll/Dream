@@ -122,7 +122,7 @@ function building() {
       '!app/images/*.svg',
       '!app/images/stack',
       'app/images/sprite.svg',
-      'app/fonts/dist/*.*',
+      'app/fonts/*.*',
       'app/*.html',
    ], { base: 'app' })
       .pipe(dest('docs'))

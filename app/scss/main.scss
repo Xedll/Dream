@@ -53,9 +53,10 @@
    &__adressContent {
       display: flex;
       & .icon-box {
-         margin-right: 18px;
-         width: 25px;
-         height: 25px;
+      margin-right: 18px;
+         &>*{
+            transform: scale(2);
+         }
       }
    }
    &__adressSelect {
@@ -104,9 +105,9 @@
          align-items: flex-end;
          & .icon-box {
             margin-right: 18px;
-            margin-top: -3px;
-            width: 25px;
-            height: 25px;
+               &>*{
+               transform: scale(2);
+            }
          }
       }
    }
@@ -133,6 +134,7 @@
    }
    &__icon {
       transition: transform .2s;
+      transform: scale(2);
    }
    &__option {
 

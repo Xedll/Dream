@@ -2,6 +2,7 @@
    display: none;
 }
 .rotated {
-   transform:rotate(180deg);
+   transform:rotate(180deg) scale(2);
+
    transition:transform .2s;
 }
